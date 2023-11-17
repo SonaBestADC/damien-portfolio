@@ -55,4 +55,19 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    .project-list{
+      width: 100%;
+    }
+    .skills{
+      width: 100%;
+    }
+    .contact{
+      width: 100%;
+    }
+  }  
 }
+
+

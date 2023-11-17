@@ -4,12 +4,26 @@
 .about{
     margin-top: 2vh;
     display: flex;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        img{
+            height: 80vh;
+            width: 80vh;
+        }
+      }      
+}
+
+.description{
+    font-size: 20px;
 }
 
 img{
     height: 30vh;
+    margin-top: 2vh;
     margin-right: 5vw;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2vw;
     border-radius: 10px;
 }
+

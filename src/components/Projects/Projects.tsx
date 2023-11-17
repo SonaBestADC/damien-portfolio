@@ -12,7 +12,7 @@ export default function Projects() {
         <ul>
           <li>
             &nbsp;
-            <a href="" target="_blank">
+            <a href="https://github.com/SonaBestADC/damien-portfolio" target="_blank">
               This Portfolio
             </a>
           </li>

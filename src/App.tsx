@@ -15,6 +15,9 @@ const App: React.FC = () => {
 
   return (
     <div className={`App ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+      <a href="https://en.wikipedia.org/wiki/The_Eminence_in_Shadow" target="_blank" className="shadow">
+        Shadow
+      </a>
       <div className={`jumbotron ${isDarkModeJumbo ? "dark-mode-jumbo" : "light-mode-jumbo"}`}>
         <div className="container">
           <Header />
