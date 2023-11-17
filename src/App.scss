@@ -1,0 +1,49 @@
+@import "_variables.scss";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  height: 85vh;
+  
+}
+
+.toggle-btn{
+  color: gray;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-top: 10px;
+}
+
+.dark-mode {
+  background: $secondary-bg-dark;
+  color: $font-color-dark;
+}
+
+.dark-mode-jumbo {
+  background-color: $primary-bg-dark;
+}
+
+.light-mode {
+  background: $secondary-bg-light;
+  color: $font-color-light;
+}
+
+.light-mode-jumbo {
+  background-color: $primary-bg-light;
+}

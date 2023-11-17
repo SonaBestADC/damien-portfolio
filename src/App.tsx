@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/Header/Header";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Projects from "./components/Projects/Projects";
+import "./App.scss";
 
-function App() {
+const App: React.FC = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkModeJumbo, setIsDarkModeJumbo] = useState(true);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+    setIsDarkModeJumbo((prevMode) => !prevMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+      <div className={`jumbotron ${isDarkModeJumbo ? "dark-mode-jumbo" : "light-mode-jumbo"}`}>
+        <div className="container">
+          <Header />
+          <AboutMe />
+          <hr />
+          <Projects />
+        </div>
+      </div>
+      <a className="toggle-btn" onClick={toggleDarkMode}>
+        Toggle Dark
+      </a>
     </div>
   );
-}
+};
 
 export default App;
